@@ -1,4 +1,5 @@
-###Git kommandon till terminalen
+#Börja rätt!
+
 
 1. Skapa en ny mapp på datorn med filerna du vill lägga ut på github
 
@@ -12,7 +13,7 @@
 4. Gå ner till terminalen innuti Pycharm
 
 
-###Kommandon i terminalen: 
+##Kommandon i terminalen ~ i ordning: 
 
 1. git init 
 - Detta skapar en lokal Git repository till ditt projekt
@@ -52,12 +53,20 @@ Man kan skriva: git add (filnamnet.py) utan paranteser då. om man endast vill l
 1. git status
 - Kolla vilka filer som ändrats.. dem är i röd text
 
-2. git add (filnamnet) eller git add .
 
-3. git status
+2. git add (filnamnet)
+- t.ex. git add .\README.md == Detta tar endast med README.md filen
+- eller git add . == detta gör att alla filer som blev röda under "git status" kommer nu bli gröna och redo för uppladdning
+
+
+4. git status
 -Kolla så filerna blivit gröna nu så dem är redo att laddas upp
 
-4. git push
+
+5. git commit -m "meddelande om ändringarna"
+
+
+6. git push
 - Om detta inte funkar. testa: git push origin. om inte det heller funkar så testa. git push origin main
 
 
