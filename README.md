@@ -73,24 +73,32 @@ Man kan skriva: git add (filnamnet.py) utan parenteser då. om man endast vill l
 
 
 6. ```git push```
-- Om detta inte funkar. testa: ```git push origin```. om inte det heller funkar så testa. ```git push origin main```
+- Om detta inte funkar. testa: 
+
+
+- ```git push origin```. 
+
+
+- om inte det heller funkar så testa. 
+- ```git push origin main```
 
 ---
 
 <h2 align="center">Ta bort filer i din commit:</h2>
+
 Om du gjort (git add .) med punkten i slutet kommer alla filer att läggas till i din nästa commit..
 om du vill ta bort specefika filer så skriver du
-```
-git restore --staged filnamnet.py
-```
+
+`git restore --staged filnamnet.py`
+
 Om du vill ta bort en specefik fil:
-```
-git restore --staged '.\Vecka2\Uppgift 10.py'
-```
+
+`git restore --staged '.\Vecka2\Uppgift 10.py'`
+
 om du vill ta bort en hel mapp med alla filer i den:
-```
-git restore --staged .\Vecka2\
-```
+
+`git restore --staged .\Vecka2\`
+
 ---
 
 <h1 align="center">Hur man Forkar en repository</h1>
@@ -122,12 +130,13 @@ Sedan Klonar du din "Forkade repository"
 5. Skapa / Öppna en ny mapp där du vill att dem clonade filerna ska sparas i (Den nya mappen ska vara tom)
 
 
-6. Skriv: ```git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY```
+6. Skriv: `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 - Ersätt självklart denna länken med den du kopierade från Github
 
 
 7. Klicka ENTER för att skapa din lokala "Clone" av repot från Github
-```$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `Spoon-Knife`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -144,50 +153,54 @@ Sedan Klonar du din "Forkade repository"
 ##### Error message: "Updates were rejected because the tip of your current branch is behind"
 
 ### LÖSNING:
-```
-git push -f origin main
-```
+```git push -f origin main```
 - -f står för Force
 ---
 
 ##### Error message: "Logon failed, use ctrl+c to cancel basic credential prompt "
 
 ### LÖSNING:
-Om detta händer dig så är du inte på den senaste versionen av Git  
+Om detta händer dig så är du inte på den senaste versionen av Git
 Skriv in kommandot nedan i Terminalen baserat på ditt operativsystem.
 
-Windows: ```git update-git-for-windows```
+Windows: `git update-git-for-windows`
 
-Linux/Unix: ```git update```
+Linux/Unix: 
+```
+#!/bin/bash
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git -y
+```
 
 ---
 
 
 <h1 align="center">Hur man byter/skapar branches</h1>
 
-1. ```git checkout -b nyttBranchNamn```
+1. `git checkout -b nyttBranchNamn`
 - Ersätt nyttBranchNamn med vad du vill döpa din nya branch till
 
-2. ```git checkout nyttBranchNamn```
+2. `git checkout nyttBranchNamn`
 - Detta får dig att hoppa från Main branchen till nyttBranchNamn branchen
 
 ---
 
 <h2 align="center">Byta mellan brancher:</h2>
 
-1. ```git checkout nyttBranchNamn```
+1. `git checkout nyttBranchNamn`
 - Byter från main till nyttBranchNamn 
 
-2. ```git checkout main```
+2. `git checkout main`
 - Återvänder till main branchen
 
 ---
 
 <h2 align="center">Hur man pushar från olika brancher till github</h2> 
 
-1. ```git checkout nyttBranchNamn```
+1. `git checkout nyttBranchNamn`
 
-2. ```git push origin nyttBranchNamn```
+2. `git push origin nyttBranchNamn`
 
 ---
 
