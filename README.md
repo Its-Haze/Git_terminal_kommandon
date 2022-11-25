@@ -45,7 +45,7 @@ Man kan skriva: git add (filnamnet.py) utan parenteser då. om man endast vill l
 
 8. ```git remote add origin https://github.com/"your_repository_name.git```
 - Byt ut your_repository_name.git med vad din repository heter på github
-- T.ex [https://github.com/Erik-Avakian/Git_terminal_kommandon.git]()
+- T.ex [https://github.com/its-haze/Git_terminal_kommandon.git]()
 
 9. ```git push -u origin main```
 - Detta pushar filerna från din dator till github
@@ -204,5 +204,5 @@ sudo apt-get install git -y
 
 ---
 
-<h1 align="center">Av Erik Avakian</h1>
+<h1 align="center">Av Haze</h1>
 
